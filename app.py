@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 from flask import Flask, request
 
-app = Flask(Botman)
+app = Flask(__name__)
 
 
 @app.route('/', methods=['GET'])
