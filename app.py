@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 from flask import Flask, request
 
-app = Flask(__name__)
+app = Flask(Botman)
 
 
 @app.route('/', methods=['GET'])
@@ -18,7 +18,7 @@ def verify():
             return "Verification token mismatch", 403
         return request.args["hub.challenge"], 200
 
-    return "Hello world", 200
+    return "Yo, yo, yo.  Sup?", 200
 
 
 @app.route('/', methods=['POST'])
