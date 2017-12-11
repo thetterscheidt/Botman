@@ -1,3 +1,8 @@
+import requests
+import json
+from flask import Flask, request
+import apiai
+
 # FB messenger credentials
 ACCESS_TOKEN = os.environ["PAGE_ACCESS_TOKEN"]
 
