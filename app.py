@@ -7,8 +7,8 @@ import apiai
 ACCESS_TOKEN = os.environ["PAGE_ACCESS_TOKEN"]
 
 # api.ai credentials
-CLIENT_ACCESS_TOKEN = "d5b5bb187d654b899c03ecd5dc9bc0ce"
-ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
+#CLIENT_ACCESS_TOKEN = "d5b5bb187d654b899c03ecd5dc9bc0ce"
+#ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
 
 app = Flask(__name__)
 
