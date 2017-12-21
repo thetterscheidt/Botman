@@ -35,7 +35,10 @@ def reply(user_id, msg):
 
 @app.route('/', methods=['POST'])
 def handle_incoming_messages():
+    log("At the beginning of handle_incoming_messages")
+
     data = request.json
+    log(data)
     sender = data['entry'][0]['messaging'][0]['sender']['id']
     message = data['entry'][0]['messaging'][0]['message']['text']
 
